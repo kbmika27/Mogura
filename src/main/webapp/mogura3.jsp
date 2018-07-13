@@ -101,7 +101,9 @@
                     function hit(n) {
                         console.log("hitできてる!!");
                         if ((document.images[n].src == img[2].src||document.images[n].src == img[1].src) && (event.button == 0)) {
-                            score++;
+                        	var audio = new Audio("/poka.wav");
+                            audio.play();
+                        	score++;
                             document.images[n].src = img[3].src;
                             console.log("hitできてる");
 
